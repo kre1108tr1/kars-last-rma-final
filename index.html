@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Minecraft Mod Karşılaştırıcı</title>
+    <style>
+        body { font-family: sans-serif; background: #2c3e50; color: white; padding: 20px; }
+        .box { background: #34495e; padding: 20px; border-radius: 8px; }
+        input { width: 100%; padding: 10px; margin: 10px 0; box-sizing: border-box; }
+        button { width: 100%; padding: 12px; cursor: pointer; border: none; border-radius: 4px; font-weight: bold; margin-bottom: 10px; }
+        #saveBtn { background: #3498db; color: white; }
+        #checkBtn { background: #27ae60; color: white; }
+        #log { background: #1e272e; height: 200px; overflow-y: auto; padding: 10px; border: 1px solid #555; font-family: monospace; }
+        .eksik { color: #e74c3c; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Mod Karşılaştırıcı</h2>
+        <label>Klasör Yolu:</label>
+        <input type="text" id="yol" placeholder="C:\Users\...\mods">
+        
+        <button id="saveBtn">1. Adım: Kendi Listemi Oluştur (JSON)</button>
+        <button id="checkBtn">2. Adım: Arkadaşımın Listesiyle Karşılaştır</button>
+        
+        <div id="log">Hazır...</div>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+</html>
